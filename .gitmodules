@@ -1,0 +1,6 @@
+[submodule "mono-tools"]
+	path = mono-tools
+	url = https://github.com/angavrilov/mono-tools.git
+[submodule "mono"]
+	path = mono
+	url = https://github.com/angavrilov/mono.git
