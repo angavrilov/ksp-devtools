@@ -1,9 +1,9 @@
 @echo off
 
 if defined ProgramFiles(x86) (
-    set MonoDir=%ProgramFiles(x86)%\Mono-3.2.3
+    set MonoDir="%ProgramFiles(x86)%\Mono-3.2.3"
 ) else (
-    set MonoDir=%ProgramFiles%\Mono-3.2.3
+    set MonoDir="%ProgramFiles%\Mono-3.2.3"
 )
 
 rem set GTK2_RC_FILES=%ProgramFiles%\Unity\MonoDevelop\bin\gtkrc.win32
