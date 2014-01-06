@@ -19,8 +19,10 @@ MONOTOOLS=mono-tools/Mono.Profiler/lib/
 
 cp -f $MONOTOOLS/*.dll $MONOTOOLS/*.exe Tools/
 
+rst2html README.rst > README.html
+
 rm -f devtools-linux32.zip devtools-win32.zip pdb-win32.zip
 
-zip -r devtools-linux32.zip KSP_linux Tools LICENSE -x \*.gitignore Tools/emveepee.bat
-zip -r devtools-win32.zip KSP_win Tools LICENSE -x \*.gitignore Tools/emveepee.sh
+zip -r devtools-linux32.zip KSP_linux Tools LICENSE README.html -x \*.gitignore Tools/emveepee.bat
+zip -r devtools-win32.zip KSP_win Tools LICENSE README.html -x \*.gitignore Tools/emveepee.sh
 zip pdb-win32.zip PDB/*.pdb
