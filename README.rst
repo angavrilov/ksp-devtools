@@ -181,8 +181,10 @@ Running the debugger
 
 4. Start KSP with ``run32-debug``. MonoDevelop should react by entering debugging mode.
 
+==============
+Technical Info
+==============
 
-=========
 Compiling
 =========
 
@@ -205,3 +207,15 @@ Specific component instructions:
 
 4. Finally, ``package.sh`` on linux copies all necessary files into the right places, and
    packs them into zip archives.
+
+Version History
+===============
+
+**0.1**
+  * Initial version. Added experimental support for windows.
+
+**0.2**
+  * Added FPS indicator and a utility for browsing the Unity GameObject tree.
+  * Merged a branch with fixes for the debugger. The most notable bug was a
+    deadlock if evaluating a property for the debugger watch window throws
+    an exception.
