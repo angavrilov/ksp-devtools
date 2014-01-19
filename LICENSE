@@ -9,7 +9,8 @@ libraries, which are distributed under their own licenses:
 
     Source: https://github.com/angavrilov/mono-tools
 
-Therefore, all original code and scripts are also placed under GNU LGPL.
+Therefore, all new code and scripts are also placed under GNU LGPL,
+unless noted otherwise in the file itself.
 
 
 ------------------------------------------------------------------------

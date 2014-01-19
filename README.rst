@@ -36,6 +36,11 @@ On linux the mono package from your distribution should work.
 Likewise, for debugging you need MonoDevelop, for example the version that
 comes with Unity tools.
 
+The package also includes some small ordinary mods in the ``Misc`` subfolder,
+specifically an FPS indicator, and a class to help view the hierarchy of Unity
+GameObjects in the debugger watch window. These should be simply placed in
+GameData as any other mod.
+
 
 =========
 Profiling
@@ -147,6 +152,9 @@ Setting up the project
    output path to the appropriate directory in Game Data.
 
    Breakpoints don't seem to be recognized if you manually copy the DLL.
+
+   As an alternative, on linux it may also work if instead of copying you create
+   a symbolic link in GameData that points to your dll in the build directory.
 
 3. Right click on everything in *References* and uncheck the *Local copy* option.
 
