@@ -181,6 +181,19 @@ Running the debugger
 
 4. Start KSP with ``run32-debug``. MonoDevelop should react by entering debugging mode.
 
+Exploring GameObject hierarchy
+==============================
+
+The debugger supports viewing fields and properties of objects, but doesn't understand
+how to use the Transform methods to navigate the hierarchy of Unity GameObjects. To help
+with this, the ``Misc`` subfolder contains a utility class called ``UnityObjectTree``,
+which should be placed in GameData like any ordinary mod.
+
+If you want to investigate the object returned by expression ``foo``, add a watch
+expression referring to ``UnityObjectTree.Wrap(foo)``, and it will expose the unity
+object hierarchy via the hierarchy of the wrapper objects, navigatable via properties.
+
+
 ==============
 Technical Info
 ==============
@@ -219,3 +232,8 @@ Version History
   * Merged a branch with fixes for the debugger. The most notable bug was a
     deadlock if evaluating a property for the debugger watch window throws
     an exception.
+
+**0.3**
+  * Applied a few more fixes from upstream, most notably for a bug that caused
+    *Step Into* on a statement that contains multiple calls, including functions
+    without debug info, to skip over calls that do have debug info.
