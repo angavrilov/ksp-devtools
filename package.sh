@@ -19,6 +19,7 @@ compile_ksp() {
 
 compile_ksp Misc/FPS.dll Misc/FPS.cs
 compile_ksp Misc/UnityObjectTree.dll Misc/UnityObjectTree.cs
+compile_ksp Misc/MonoProfilerToggle.dll Misc/MonoProfilerToggle.cs
 
 MONODIR=mono/builds/embedruntimes/
 

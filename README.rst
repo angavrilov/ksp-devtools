@@ -93,10 +93,18 @@ The script contains three sample sets of options:
     that after using the ``disable`` command, and waiting a bit, it is
     mostly safe to quit the game with Alt-F4.
 
+    The ``Misc`` subfolder includes a *MonoProfilerToggle* utility, which
+    implements an in-game way to send these commands. When loaded into the game
+    with this mode of profiling enabled, it automatically establishes the TCP
+    control connection, and then shows the estimated current state in the bottom
+    right corner of the screen, while allowing it to be toggled by pressing
+    *Right Alt + F10*.
+
     **Note:** Shutting down the game and then quickly restarting
     it may cause a failure to listen on the port due to a reuse timeout.
     The only way you will know is that telnet won't be able to connect.
-    Also, you cannot reconnect if you close telnet by mistake.
+    Also, it does not support simultaneous connections, or reconnecting
+    if you close telnet by mistake.
 
 
 OS specifics
