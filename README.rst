@@ -245,3 +245,7 @@ Version History
   * Applied a few more fixes from upstream, most notably for a bug that caused
     *Step Into* on a statement that contains multiple calls, including functions
     without debug info, to skip over calls that do have debug info.
+
+**0.4**
+  * Added a utility for toggling the profiler from within the game.
+  * Made the profiler lock its mutex while enabling and disabling.
