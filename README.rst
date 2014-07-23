@@ -217,7 +217,7 @@ Specific component instructions:
 
 1. To build the Mono library on linux, enter the ``mono/`` submodule and execute:
 
-   ``perl build_runtime_linux.pl``
+   ``perl external/buildscripts/build_runtime_linux.pl``
 
 2. To build Mono on windows, open ``mono/msvc/mono.sln`` with Visual Studio Express 2010
    (ignoring messages about disabled features), select target *Release_eglib (Win32)*
