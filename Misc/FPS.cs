@@ -41,11 +41,11 @@ namespace FPS
 		{
 			if (style == null)
 			{
-				pos = new Rect(Screen.width - 60, 0, 50, 60);
+				pos = new Rect(Screen.width - 60, 39, 50, 60);
 
 				style = new GUIStyle(GUI.skin.label);
 				style.alignment = TextAnchor.UpperRight;
-				style.normal.textColor = new Color(0.7f, 0.7f, 0.7f, 0.5f);
+				style.normal.textColor = new Color(0.8f, 0.8f, 0.8f, 0.6f);
 			}
 
 			GUI.Label(pos, fps, style);
