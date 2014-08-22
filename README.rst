@@ -249,3 +249,8 @@ Version History
 **0.4**
   * Added a utility for toggling the profiler from within the game.
   * Made the profiler lock its mutex while enabling and disabling.
+
+**0.5**
+  * Merged the Unity 4.5 branch and recompiled the libraries.
+  * Fixed the FPS indicator positioning to avoid the new toolbar.
+
