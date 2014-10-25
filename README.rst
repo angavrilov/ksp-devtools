@@ -189,6 +189,21 @@ Running the debugger
 
 4. Start KSP with ``run32-debug``. MonoDevelop should react by entering debugging mode.
 
+Stopping on exceptions
+======================
+
+In order to make the debugger stop on any exceptions that end up in the game
+log, open the *Run* -> *Exceptions...* dialog in MonoDevelop and add
+``System.StackOverflowException`` to the "stop in" list. This exception
+was chosen as the magic token because it is unlikely to happen in reality
+without crashing the game.
+
+Originally Unity added some code to the debugger that would make it stop
+on any exceptions that are caught by C code and originate in methods of
+classes deriving from MonoBehavior, but that doesn't work too well because
+it ignores anything thrown from libraries, and can't be manually turned off
+if some other mod starts spamming the log.
+
 Exploring GameObject hierarchy
 ==============================
 
@@ -254,3 +269,5 @@ Version History
   * Merged the Unity 4.5 branch and recompiled the libraries.
   * Fixed the FPS indicator positioning to avoid the new toolbar.
 
+**0.6**
+  * Changed the logic used to decide whether to stop on unhandled exceptions.
