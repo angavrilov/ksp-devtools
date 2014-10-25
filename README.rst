@@ -271,3 +271,4 @@ Version History
 
 **0.6**
   * Changed the logic used to decide whether to stop on unhandled exceptions.
+  * Added a workaround for premature semaphore wait interruption when debugging.
